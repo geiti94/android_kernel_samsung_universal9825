@@ -1,0 +1,110 @@
+
+==============================================
+START : FUNC_BUILD_KERNEL
+==============================================
+
+build common config=exynos9820-d2s_nemesis_defconfig 
+build model config=d2s 
+drivers/leds/Kconfig:734:warning: ignoring type redefinition of 'LEDS_KTD2692' from 'tristate' to 'boolean'
+drivers/Kconfig:224:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:7:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:8:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:9:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:10:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:11:warning: ignoring unsupported character ''
+drivers/samsung/misc/Kconfig:127:warning: leading whitespace ignored
+#
+# configuration written to .config
+#
+scripts/kconfig/conf  --silentoldconfig Kconfig
+drivers/leds/Kconfig:734:warning: ignoring type redefinition of 'LEDS_KTD2692' from 'tristate' to 'boolean'
+drivers/Kconfig:224:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:5:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:7:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:8:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:9:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:10:warning: ignoring unsupported character ''
+drivers/redriver/Kconfig:11:warning: ignoring unsupported character ''
+drivers/samsung/misc/Kconfig:127:warning: leading whitespace ignored
+  CHK     include/config/kernel.release
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+kperfmon_DUMMY=""
+  CHK     scripts/mod/devicetable-offsets.h
+  CHK     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  LDS     arch/arm64/kernel/vmlinux.lds
+  CC      mm/vmscan.o
+  CC      mm/page_alloc.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      block/genhd.o
+kperfmon_DUMMY=""
+  CC      drivers/kperfmon/ologk.o
+  CC      drivers/cpufreq/cpufreq.o
+  CC      drivers/samsung/misc/sec_argos.o
+  AR      drivers/kperfmon/built-in.o
+drivers/vision/npu/generated/update_ver_info.sh
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+fatal: not a git repository (or any of the parent directories): .git
+drivers/vision/npu/generated/update_ver_info.sh: 14: drivers/vision/npu/generated/update_ver_info.sh: USER_INFO: not found
+  AR      drivers/vision/npu/built-in.o
+  AR      drivers/vision/built-in.o
+  AR      drivers/samsung/misc/built-in.o
+  AR      drivers/samsung/built-in.o
+  AR      block/built-in.o
+  AR      drivers/cpufreq/built-in.o
+  AR      drivers/built-in.o
+  AR      mm/built-in.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  AR      init/built-in.o
+  AR      built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 2 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  KSYM    .tmp_kallsyms1.o
+  KSYM    .tmp_kallsyms2.o
+  LD      vmlinux
+  SORTEX  vmlinux
+  SYSMAP  System.map
+  FIPS : Generating hmac of crypto and updating vmlinux... 
+HMAC for "crypto" module is: b'c08456d14d436f2a53e8e3a6a7cf595b3c929dacc8dd3b7f3c680e6f7907b375'
+FIPS integrity procedure has been finished for crypto
+  FIPS : Generating hmac of fmp and updating vmlinux... 
+HMAC for "fmp" module is: b'85e89aab0334a9a170234dfea12010c64f0c51f76a028897a798ef991bdd718c'
+FIPS integrity procedure has been finished for fmp
+  OBJCOPY arch/arm64/boot/Image
+  Building modules, stage 2.
+  MODPOST 3 modules
+  CC      drivers/gpu/arm/b_r16p0/tests/kutf/kutf.mod.o
+  CC      net/ipv4/tcp_htcp.mod.o
+  CC      net/ipv4/tcp_westwood.mod.o
+  GZIP    arch/arm64/boot/Image.gz
+  LD [M]  net/ipv4/tcp_htcp.ko
+  LD [M]  net/ipv4/tcp_westwood.ko
+  LD [M]  drivers/gpu/arm/b_r16p0/tests/kutf/kutf.ko
+Generating dtb.img...
+./build.sh: line 119: /home/geiti94/Android/kernels/Kernel/android_kernel_samsung_universal9625/tools/mkdtimg: No such file or directory
+Generating dtbo.img...
+./build.sh: line 122: /home/geiti94/Android/kernels/Kernel/android_kernel_samsung_universal9625/tools/mkdtimg: No such file or directory
+
+=================================
+END   : FUNC_BUILD_KERNEL
+=================================
+
+Total compile time was 71 seconds

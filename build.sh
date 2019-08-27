@@ -29,7 +29,6 @@ d2s)
 		;;
 	esac
 ;;
-case $MODEL in
 d2x)
 	case $VARIANT in
 	can|duos|eur|xx)
@@ -41,7 +40,6 @@ d2x)
 		;;
 	esac
 ;;
-case $MODEL in
 d1)
 	case $VARIANT in
 	can|duos|eur|xx)
@@ -53,7 +51,6 @@ d1)
 		;;
 	esac
 ;;
-case $MODEL in
 d1x)
 	case $VARIANT in
 	can|duos|eur|xx)

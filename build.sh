@@ -29,6 +29,42 @@ d2s)
 		;;
 	esac
 ;;
+case $MODEL in
+d2x)
+	case $VARIANT in
+	can|duos|eur|xx)
+		KERNEL_DEFCONFIG=exynos9820-d2x_nemesis_defconfig
+		;;
+	*)
+		echo "Unknown variant: $VARIANT"
+		exit 1
+		;;
+	esac
+;;
+case $MODEL in
+d1)
+	case $VARIANT in
+	can|duos|eur|xx)
+		KERNEL_DEFCONFIG=exynos9820-d1_nemesis_defconfig
+		;;
+	*)
+		echo "Unknown variant: $VARIANT"
+		exit 1
+		;;
+	esac
+;;
+case $MODEL in
+d1x)
+	case $VARIANT in
+	can|duos|eur|xx)
+		KERNEL_DEFCONFIG=exynos9820-d1x_nemesis_defconfig
+		;;
+	*)
+		echo "Unknown variant: $VARIANT"
+		exit 1
+		;;
+	esac
+;;
 beyond2lte)
 	case $VARIANT in
 	can|duos|eur|xx)

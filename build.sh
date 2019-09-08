@@ -4,7 +4,7 @@
 export MODEL=d2s
 export VARIANT=eur
 export ARCH=arm64
-export BUILD_CROSS_COMPILE=/home/geiti94/Android/Toolchains/aarch64-linux-android-4.9
+export BUILD_CROSS_COMPILE=/home/geiti94/Android/Toolchains/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export BUILD_JOB_NUMBER=128
 
 RDIR=$(pwd)
